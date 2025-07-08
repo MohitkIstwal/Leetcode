@@ -9,18 +9,28 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        //Brute Approach (Adding Nodes in a map DS)
-        if(head==NULL){
+        // Tortoise and Hare Approach
+        if(head==NULL || head->next==NULL){
             return NULL;
         }
-        ListNode *temp=head;
-        map<ListNode *,int> mp;
-        while(temp){
-            if(mp.find(temp)!=mp.end()){
-                return temp;
+        ListNode *slow=head;
+        ListNode *fast=head;
+        ListNode *temp=NULL;
+        while(fast && fast->next){
+            slow=slow->next;
+            fast=fast->next->next;
+            if(slow==fast){
+                temp=slow; slow=head; break;
             }
-            mp[temp]=1;
-            temp=temp->next;
+        }
+        if(temp!=NULL){
+            while(true){
+                if(slow==temp){
+                    return temp;
+                }
+                slow=slow->next;
+                temp=temp->next;
+            }
         }
         return NULL;
     }
