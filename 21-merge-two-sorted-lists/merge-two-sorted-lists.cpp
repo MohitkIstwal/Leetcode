@@ -24,7 +24,7 @@ public:
         ListNode *temp=dummy;
         ListNode *t1=list1;
         ListNode *t2=list2;
-        while(t1 || t2){
+        while(t1 && t2){
             int a=1e9,b=1e9;
             if(t1){
                 a=t1->val;
@@ -42,6 +42,12 @@ public:
                 t2=t2->next;
                 temp=temp->next;
             }
+        }
+        if(t1){
+            temp->next=t1;
+        }
+        if(t2){
+            temp->next=t2;
         }
         return dummy->next;
     }
