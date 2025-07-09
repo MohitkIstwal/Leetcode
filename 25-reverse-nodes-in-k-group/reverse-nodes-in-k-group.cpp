@@ -10,52 +10,52 @@
  */
 class Solution {
 public:
-    ListNode* reverseKGroup(ListNode* head, int k) {
-        vector<int> v;
-        ListNode *temp=head;
-        while(temp){
-            v.push_back(temp->val);
+    ListNode* getknode(ListNode* temp,int k){
+        k-=1;
+        while(temp!=NULL && k>0){
+            k--;
             temp=temp->next;
         }
-        ListNode *newHead=new ListNode(-1);
-        newHead->next=head;
-        head=newHead;
-        temp=head->next;
-        int i=0;
-        while(true){
-            stack<int> st;
-            int a=0;
-            while(a!=k && i<v.size()){
-                st.push(v[i]);
-                i++; a++;
-            }
-            if(a==k){
-                while(!st.empty()){
-                    int x=st.top();
-                    temp->val=x;
-                    temp=temp->next;
-                    st.pop();
+        return temp;
+    }
+
+    void reversell(ListNode* head){
+        ListNode* prev=NULL;
+        ListNode* curr=head;
+        ListNode* next=NULL;
+        while(curr){
+            next=curr->next;
+            curr->next=prev;
+            prev=curr; curr=next;
+        }
+    }
+
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        ListNode* temp=head;
+        ListNode* prevNode=NULL;
+        ListNode* nextNode=NULL;
+        while(temp!=NULL){
+            ListNode* knode=getknode(temp,k);
+            if(knode==NULL){
+                if(prevNode){
+                    prevNode->next=temp;
                 }
+                break;
             }
             else{
-                stack<int> st1;
-                while(!st.empty()){
-                    int x=st.top();
-                    st1.push(x);
-                    st.pop();
+                nextNode=knode->next;
+                knode->next=NULL;
+                reversell(temp);
+                if(temp==head){
+                    head=knode;
                 }
-                while(!st1.empty()){
-                    int x=st1.top();
-                    temp->val=x;
-                    temp=temp->next;
-                    st1.pop();
+                else{
+                    prevNode->next=knode;
                 }
-                break;
-            }
-            if(i==v.size()){
-                break;
+                prevNode=temp;
+                temp=nextNode;
             }
         }
-        return head->next;
+        return head;
     }
 };
