@@ -17,24 +17,36 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
-        // Using map . space complexity will be used.
         if(head==NULL){
             return NULL;
         }
         Node *temp=head;
-        map<Node*, Node*> mp;
         while(temp){
-            Node *t=new Node(temp->val);
-            mp[temp]=t;
-            temp=temp->next;
+            Node *newNode=new Node(temp->val);
+            newNode->next=temp->next; temp->next=newNode; 
+            temp=newNode->next;
         }
         temp=head;
         while(temp){
-            Node *copyNode=mp[temp];
-            copyNode->next=mp[temp->next];
-            copyNode->random=mp[temp->random];
-            temp=temp->next;
+            if(temp->random){
+                temp->next->random=temp->random->next;
+            }
+            temp=temp->next->next;
         }
-        return mp[head];
+        Node* original = head;
+        Node* copy = head->next;
+        Node* newHead = copy;
+        while (original && copy) {
+            original->next = original->next->next;
+            if(copy->next){
+                copy->next=copy->next->next;
+            }
+            else{
+                copy->next=NULL;
+            }
+            original = original->next;
+            copy = copy->next;
+        }
+        return newHead;
     }
 };
