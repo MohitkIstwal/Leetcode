@@ -21,10 +21,6 @@ public:
         if(head==NULL){
             return NULL;
         }
-        // if(head->next==NULL){
-        //     Node *temp=new Node(head->val);
-        //     return temp;
-        // }
         Node *temp=head;
         map<Node*, Node*> mp;
         while(temp){
