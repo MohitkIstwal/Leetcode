@@ -10,51 +10,27 @@
  */
 class Solution {
 public:
-
-    ListNode* merge2lists(ListNode *head1,ListNode *head2){
-        ListNode *dummy=new ListNode(-1);
-        ListNode *temp=dummy;
-        ListNode *t1=head1;
-        ListNode *t2=head2;
-        while(t1!=NULL && t2!=NULL){
-            if(t1->val<=t2->val){
-                temp->next=t1;
-                t1=t1->next;
-                temp=temp->next;
-            }
-            else{
-                temp->next=t2;
-                t2=t2->next;
-                temp=temp->next;
-            }
-        }
-        if(t1){
-            temp->next=t1;
-        }
-        if(t2){
-            temp->next=t2;
-        }
-        return dummy->next;
-    }
-
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        if(lists.size()==0){
-            return NULL;
-        }
-        int a=1;
-        ListNode *head;
-        for(int i=0;i<lists.size();i++){
-            if(lists[i]!=NULL){
-                head=lists[i];
-                a=i+1; break;
+        // using priority queue
+        priority_queue<int,vector<int>,greater<int>> minheap;
+
+        for (int i = 0; i < lists.size(); i++) {
+            ListNode* node = lists[i];
+            while (node != nullptr) {
+                minheap.push(node->val);
+                node = node->next;
             }
         }
-        if(a==lists.size()){
-            return head;
+        if (minheap.empty()) return nullptr;
+        ListNode* ans=new ListNode(minheap.top());
+        minheap.pop();
+        ListNode* temp=ans;
+        while(!minheap.empty()){
+            ListNode* a=new ListNode(minheap.top());
+            temp->next=a;
+            temp=temp->next;
+            minheap.pop();
         }
-        for(int i=a;i<lists.size();i++){
-            head=merge2lists(head,lists[i]);
-        }
-        return head;
+        return ans;
     }
 };
