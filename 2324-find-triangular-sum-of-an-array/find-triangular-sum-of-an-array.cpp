@@ -6,8 +6,7 @@ public:
             for(int i=0;i<v.size()-1;i++){
                 temp.push_back((v[i]+v[i+1])%10);
             }
-            v.clear();
-            v=temp;
+            v=move(temp);
         }
         return v[0];
     }
