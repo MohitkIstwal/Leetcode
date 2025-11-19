@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-
+// recursive code
     void inorder(vector<int> &v,TreeNode* root){
         if(!root){
             return;
@@ -20,10 +20,30 @@ public:
         v.push_back(root->val);
         inorder(v,root->right);
     }
-
+// iterative code
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> ans;
-        inorder(ans,root);
+        if(root==NULL){
+            return ans;
+        }
+        stack<TreeNode*> st;
+        TreeNode* node=root;
+        while(true){
+            if(node!=NULL){
+                st.push(node);
+                node=node->left;
+            }
+            else{
+                if(st.empty()){
+                    break;
+                }
+                node=st.top();
+                st.pop();
+                ans.push_back(node->val);
+                node=node->right;
+                //st.push(node);
+            }
+        }
         return ans;
     }
 };
