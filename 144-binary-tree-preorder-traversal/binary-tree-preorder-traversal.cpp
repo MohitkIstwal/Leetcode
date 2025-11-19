@@ -11,6 +11,8 @@
  */
 class Solution {
 public:
+
+// this is the recursive method
     void preorder(vector<int> &v,TreeNode* root){
         if(!root){
             return;
@@ -22,7 +24,22 @@ public:
 
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> ans;
-        preorder(ans,root);
+        if(root==NULL){
+            return ans;
+        }
+        stack<TreeNode*> st;
+        st.push(root);
+        while(!st.empty()){
+            TreeNode* t=st.top();
+            st.pop();
+            ans.push_back(t->val);
+            if(t->right!=NULL){
+                st.push(t->right);
+            }
+            if(t->left!=NULL){
+                st.push(t->left);
+            }
+        }
         return ans;
     }
 };
