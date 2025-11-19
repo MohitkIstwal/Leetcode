@@ -20,29 +20,36 @@ public:
         postorder(v,root->right);
         v.push_back(root->val);
     }
-// iterative but SC is O(2N) - using 2 stacks
+// iterative using 1 stack
     vector<int> postorderTraversal(TreeNode* root) {
         vector<int> ans;
         if(root==NULL){
             return ans;
         }
-        stack<TreeNode*> st1,st2;
-        TreeNode* node=root;
-        st1.push(node);
-        while(!st1.empty()){
-            node=st1.top();
-            st1.pop();
-            st2.push(node);
-            if(node->left!=NULL){
-                st1.push(node->left);
+        TreeNode* cur=root;
+        TreeNode* temp;
+        stack<TreeNode*> st;
+        while(!st.empty() || cur!=NULL){
+            if(cur!=NULL){
+                st.push(cur);
+                cur=cur->left;
             }
-            if(node->right!=NULL){
-                st1.push(node->right);
+            else{
+                temp=st.top()->right;
+                if(temp==NULL){
+                    temp=st.top();
+                    st.pop();
+                    ans.push_back(temp->val);
+                    while(!st.empty() && temp==st.top()->right){
+                        temp=st.top();
+                        st.pop();
+                        ans.push_back(temp->val);
+                    }
+                }
+                else{
+                    cur=temp;
+                }
             }
-        }
-        while(!st2.empty()){
-            ans.push_back(st2.top()->val);
-            st2.pop();
         }
         return ans;
     }
