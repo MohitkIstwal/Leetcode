@@ -12,20 +12,21 @@
 class Solution {
 public:
 // doing it using bfs traversal
-    vector<vector<int>> bfs(TreeNode* root){
-        vector<vector<int>> ans;
+    int bfs(TreeNode* root){
+        //vector<vector<int>> ans;
         if(root==NULL){
-            return ans;
+            return 0;
         }
         queue<TreeNode*> q;
         q.push(root);
+        int ans=1;
         while(!q.empty()){
             int size=q.size();
             vector<int> temp;
             for(int i=0;i<size;i++){
                 TreeNode* t=q.front();
                 q.pop();
-                temp.push_back(t->val);
+                //temp.push_back(t->val);
                 if(t->left!=NULL){
                     q.push(t->left);
                 }
@@ -33,13 +34,14 @@ public:
                     q.push(t->right);
                 }
             }
-            ans.push_back(temp);
+            if(!q.empty()){
+                ans++;
+            }
         }
         return ans;
     }
 
     int maxDepth(TreeNode* root) {
-        vector<vector<int>> ans=bfs(root);
-        return ans.size();
+        return bfs(root);
     }
 };
