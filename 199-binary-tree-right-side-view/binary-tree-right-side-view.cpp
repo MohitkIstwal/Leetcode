@@ -12,30 +12,20 @@
 class Solution {
 public:
 
-    //can be done using level traversal
+    void f(TreeNode* root, int level,vector<int> &ans){
+        if(root==NULL){
+            return;
+        }
+        if(level==ans.size()){
+            ans.push_back(root->val);
+        }
+        f(root->right,level+1,ans);
+        f(root->left,level+1,ans);
+    }
+
     vector<int> rightSideView(TreeNode* root) {
         vector<int> ans;
-        if(root==NULL){
-            return ans;
-        }
-        queue<TreeNode* > q;
-        q.push(root);
-        while(!q.empty()){
-            int n=q.size();
-            for(int i=0;i<n;i++){
-                TreeNode* t=q.front();
-                q.pop();
-                if(i==n-1){
-                    ans.push_back(t->val);
-                }
-                if(t->left){
-                    q.push(t->left);
-                }
-                if(t->right){
-                    q.push(t->right);
-                }
-            }
-        }
+        f(root,0,ans);
         return ans;
     }
 };
