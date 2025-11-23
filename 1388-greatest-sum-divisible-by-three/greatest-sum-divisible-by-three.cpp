@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //TC- O(n) ans SC- O(1)
     int maxSumDivThree(vector<int>& nums) {
         int ans=0;
         int a1,b1,a2,b2;
