@@ -2,38 +2,43 @@ class Solution {
 public:
     int maxSumDivThree(vector<int>& nums) {
         int ans=0;
-        vector<int> arr1,arr2;
+        int a1,b1,a2,b2;
+        a1=b1=a2=b2=INT_MAX;
         for(int i=0;i<nums.size();i++){
             ans+=nums[i];
             if(nums[i]%3==1){
-                arr1.push_back(nums[i]);
+                if(nums[i]<=a1){
+                    b1=a1;
+                    a1=nums[i];
+                }
+                else if(nums[i]<b1){
+                    b1=nums[i];
+                }
             }
             else if(nums[i]%3==2){
-                arr2.push_back(nums[i]);
+                if(nums[i]<=a2){
+                    b2=a2;
+                    a2=nums[i];
+                }
+                else if(nums[i]<b2){
+                    b2=nums[i];
+                }
             }
         }
-        sort(arr1.begin(),arr1.end());
-        sort(arr2.begin(),arr2.end());
         if(ans%3==0){
             return ans;
         }
         if(ans%3==1){
             int ans1=-1,ans2=-1;
-            if(!arr1.empty()){
-                ans1=ans-arr1[0];
-            }
-            if(arr2.size()>=2){
-                ans2=ans-arr2[0]-arr2[1];
-            }
+            if(a1!=INT_MAX) ans1=ans-a1;
+            if(a2!=INT_MAX && b2!=INT_MAX) ans2=ans-a2-b2;
             return max(ans1,ans2);
         }
         int ans1=-1,ans2=-1;
-        if(!arr2.empty()){
-            ans1=ans-arr2[0];
-        }
-        if(arr1.size()>=2){
-            ans2=ans-arr1[0]-arr1[1];
-        }
+        
+        if(a2!=INT_MAX) ans1=ans-a2;
+        if(a1!=INT_MAX && b1!=INT_MAX) ans2=ans-a1-b1;
+       
         return max(ans1,ans2);
     }
 };
