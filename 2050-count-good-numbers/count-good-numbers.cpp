@@ -1,31 +1,40 @@
 class Solution {
 public:
 
-    long long getpower(long long n,long long x){
-        long long mod=1e9+7;
-        if(x==1){
-            return n;
+    int mod=1e9+7;
+
+    long long even(long long n){
+        if(n==0){
+            return 1;
         }
-        long long ans=1;
-        while(x>0){
-            if(x&1){
-                ans=(ans*n)%mod;
-            }
-            n=(n*n)%mod;
-            x/=2;
+        long long ee=even(n/2);
+
+        if(n&1){
+            return (ee*ee*5)%mod;
         }
-        return ans;
+        else{
+            return (ee*ee)%mod;
+        }
+    }
+
+    long long odd(long long n){
+        if(n==0){
+            return 1;
+        }
+        long long oo=odd(n/2);
+
+        if(n&1){
+            return (oo*oo*4)%mod;
+        }
+        else{
+            return (oo*oo)%mod;
+        }
     }
 
     int countGoodNumbers(long long n) {
-        int mod=1e9+7;
-        long long a=n/2,b=n/2;
-        if(n&1){
-            a++;
-        }
-        long long x=getpower(5,a);
-        long long y=getpower(4,b);
-        long long k=x*y;
-        return (x*y)%mod;
+        long long a=even((n+1)/2);
+        long long b=odd(n/2);
+        long long ans=(a*b)%mod;
+        return (int)ans;
     }
 };
