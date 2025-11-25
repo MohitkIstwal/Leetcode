@@ -8,6 +8,12 @@ public:
          so other one is 37 who is also 111
          no ending with 5 also doesnt have
          lets take example of no 21 - 111
+
+         ok so here is what i did
+         first even and divisible by 5 will give -1
+         all others will give ans
+         so first check if k contains only 1 in it then it is the size
+         then create no greater than k and find remainder and keep adding it and then check till it becomes zero and add no of operations to do so 
     */
 
     int smallestRepunitDivByK(int k) {
