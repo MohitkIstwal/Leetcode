@@ -1,28 +1,25 @@
 class Solution {
 public:
-    //brute approach will be to generate all in a set and then put in vector for ans
 
-    void helper(int id,vector<int> &nums,vector<int> &v,set<vector<int>> &st){
-        if(id==nums.size()){
-            st.insert(v);
-            return;
+    // the optimal approach is similar to sum2 one
+    // we will traverse through the arr and make sure that in level same type of element is not added
+
+    void helper(int ind,vector<int> &nums,vector<int> &v,vector<vector<int>> &ans){
+        ans.push_back(v);
+        for(int i=ind;i<nums.size();i++){
+            if(i>ind && nums[i]==nums[i-1]) continue;
+            v.push_back(nums[i]);
+            helper(i+1,nums,v,ans);
+            v.pop_back();
         }
-
-        v.push_back(nums[id]);
-        helper(id+1,nums,v,st);
-        v.pop_back();
-        helper(id+1,nums,v,st);
+        return;
     }
 
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
         sort(nums.begin(),nums.end());
         vector<int> v;
-        set<vector<int>> st;
-        helper(0,nums,v,st);
         vector<vector<int>> ans;
-        for(auto vec: st){
-            ans.push_back(vec);
-        }
+        helper(0,nums,v,ans);
         return ans;
     }
 };
