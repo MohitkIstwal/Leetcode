@@ -11,13 +11,9 @@ public:
 
     void helper(int ind,string &digits,string &s,vector<string> &ans,map<char,vector<char>> &mp){
         if(ind==digits.size()){
-            if(s.size()==digits.size()){
+            if(s.size()){
                 ans.push_back(s);
             }
-            return;
-        }
-        if(s.size()==digits.size()){
-            ans.push_back(s);
             return;
         }
         char ch=digits[ind];
