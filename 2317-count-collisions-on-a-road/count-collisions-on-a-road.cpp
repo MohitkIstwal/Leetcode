@@ -1,5 +1,8 @@
 class Solution {
 public:
+
+    // nice greedy problem
+    // just make sure that all cases are covered done in single try 
     int countCollisions(string str) {
         int r,l,s;
         l=r=s=0;
