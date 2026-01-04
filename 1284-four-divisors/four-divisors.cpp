@@ -1,6 +1,10 @@
 class Solution {
 public:
-
+    // okay so idea is basic
+    // just create a divisor vector with no of divisors and there sum using sieve type function
+    // later just use this precomputed vector to find the ans
+    // if no of divisors is equal to 4 then add the sum which is precomputed
+    // time complexity will be O(nlogn)
     vector<pair<int,int>> divisors(vector<pair<int,int>> &v){
         for(int i=1;i<=100000;i++){
             for(int j=i;j<=100000;j+=i){
