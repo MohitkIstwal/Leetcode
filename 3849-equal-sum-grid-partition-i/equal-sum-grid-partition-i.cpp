@@ -1,5 +1,8 @@
 class Solution {
 public:
+
+    // just brute force all the possibilties 
+    // calculate full sum of grid and then just check row by row and column by column
     bool canPartitionGrid(vector<vector<int>>& grid) {
         int n=grid.size(),m=grid[0].size();
         vector<int> r(n);
