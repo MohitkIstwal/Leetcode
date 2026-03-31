@@ -1,5 +1,9 @@
 class Solution {
 public:
+
+
+    // not written by self
+    // understood the logic of greedy approach but still tuff problem
     string generateString(string str1, string str2) {
         int n = str1.size(), m = str2.size();
         int len = n + m - 1;
