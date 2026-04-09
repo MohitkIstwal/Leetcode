@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3889-mirror-frequency-distance](https://github.com/MohitkIstwal/Leetcode/tree/master/3889-mirror-frequency-distance) |
+| [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
 ## String
 |  |
 | ------- |
@@ -25,4 +26,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3889-mirror-frequency-distance](https://github.com/MohitkIstwal/Leetcode/tree/master/3889-mirror-frequency-distance) |
+| [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
+## Sorting
+|  |
+| ------- |
+| [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
+## Enumeration
+|  |
+| ------- |
+| [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
 <!---LeetCode Topics End-->
