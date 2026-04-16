@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/MohitkIstwal/Leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
@@ -20,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/MohitkIstwal/Leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -46,4 +48,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
+## Prefix Sum
+|  |
+| ------- |
+| [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 <!---LeetCode Topics End-->
