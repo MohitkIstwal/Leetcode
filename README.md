@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/MohitkIstwal/Leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/MohitkIstwal/Leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/MohitkIstwal/Leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -65,4 +66,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/MohitkIstwal/Leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+## Greedy
+|  |
+| ------- |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/MohitkIstwal/Leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 <!---LeetCode Topics End-->
