@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/MohitkIstwal/Leetcode/tree/master/0242-valid-anagram) |
 | [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -40,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/MohitkIstwal/Leetcode/tree/master/0242-valid-anagram) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/MohitkIstwal/Leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [3889-mirror-frequency-distance](https://github.com/MohitkIstwal/Leetcode/tree/master/3889-mirror-frequency-distance) |
 ## Counting
@@ -51,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/MohitkIstwal/Leetcode/tree/master/0242-valid-anagram) |
 | [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
 ## Enumeration
 |  |
