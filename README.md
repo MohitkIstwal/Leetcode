@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/MohitkIstwal/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
 | [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/MohitkIstwal/Leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/MohitkIstwal/Leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
 | [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -48,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
 | [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
 ## Enumeration
 |  |
