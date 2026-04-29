@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/MohitkIstwal/Leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/MohitkIstwal/Leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [1929-concatenation-of-array](https://github.com/MohitkIstwal/Leetcode/tree/master/1929-concatenation-of-array) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/MohitkIstwal/Leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/MohitkIstwal/Leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
@@ -22,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [1929-concatenation-of-array](https://github.com/MohitkIstwal/Leetcode/tree/master/1929-concatenation-of-array) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Hash Table
 |  |
