@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/MohitkIstwal/Leetcode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0056-merge-intervals](https://github.com/MohitkIstwal/Leetcode/tree/master/0056-merge-intervals) |
 | [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
 | [0560-subarray-sum-equals-k](https://github.com/MohitkIstwal/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/MohitkIstwal/Leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/MohitkIstwal/Leetcode/tree/master/0056-merge-intervals) |
 | [0217-contains-duplicate](https://github.com/MohitkIstwal/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/MohitkIstwal/Leetcode/tree/master/0242-valid-anagram) |
 | [3890-integers-with-multiple-sum-of-two-cubes](https://github.com/MohitkIstwal/Leetcode/tree/master/3890-integers-with-multiple-sum-of-two-cubes) |
