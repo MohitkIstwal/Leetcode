@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0008-string-to-integer-atoi](https://github.com/MohitkIstwal/Leetcode/tree/master/0008-string-to-integer-atoi) |
 | [0242-valid-anagram](https://github.com/MohitkIstwal/Leetcode/tree/master/0242-valid-anagram) |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/MohitkIstwal/Leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [3889-mirror-frequency-distance](https://github.com/MohitkIstwal/Leetcode/tree/master/3889-mirror-frequency-distance) |
