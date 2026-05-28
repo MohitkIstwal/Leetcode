@@ -109,4 +109,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0435-non-overlapping-intervals](https://github.com/MohitkIstwal/Leetcode/tree/master/0435-non-overlapping-intervals) |
+## Database
+|  |
+| ------- |
+| [0176-second-highest-salary](https://github.com/MohitkIstwal/Leetcode/tree/master/0176-second-highest-salary) |
 <!---LeetCode Topics End-->
