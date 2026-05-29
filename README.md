@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2452-words-within-two-edits-of-dictionary](https://github.com/MohitkIstwal/Leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [2553-separate-the-digits-in-an-array](https://github.com/MohitkIstwal/Leetcode/tree/master/2553-separate-the-digits-in-an-array) |
 | [2784-check-if-array-is-good](https://github.com/MohitkIstwal/Leetcode/tree/master/2784-check-if-array-is-good) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/MohitkIstwal/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3488-closest-equal-element-queries](https://github.com/MohitkIstwal/Leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/MohitkIstwal/Leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/MohitkIstwal/Leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/MohitkIstwal/Leetcode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3783-mirror-distance-of-an-integer](https://github.com/MohitkIstwal/Leetcode/tree/master/3783-mirror-distance-of-an-integer) |
 ## Two Pointers
