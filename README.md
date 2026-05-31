@@ -115,4 +115,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0176-second-highest-salary](https://github.com/MohitkIstwal/Leetcode/tree/master/0176-second-highest-salary) |
+| [3436-find-valid-emails](https://github.com/MohitkIstwal/Leetcode/tree/master/3436-find-valid-emails) |
 <!---LeetCode Topics End-->
